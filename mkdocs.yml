@@ -26,7 +26,7 @@ markdown_extensions:
 theme:
   name: material
   language: en
-  logo: static/yr.svg
+  logo: static/YR.svg
   favicon: static/favicon.ico
   icon:
     repo: fontawesome/brands/github
