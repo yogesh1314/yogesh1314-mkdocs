@@ -1,0 +1,80 @@
+site_name: 'Tech Blog'
+site_url: https://yogesh1314.github.io
+site_description: 'Personal Blog to document my experiments with tech'
+
+use_directory_urls: true
+
+repo_url: https://github.com/yogesh1314/yogesh1314.github.io
+repo_name: yogesh1314
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yogesh1314
+      name: Yogesh Rana on github
+    - icon: fontawesome/brands/linkedin
+      link: https://in.linkedin.com/in/yogesh1314
+      name: Yogesh Rana on linkedin
+
+markdown_extensions:
+  - tables
+  
+theme:
+  name: material
+  language: en
+  logo: static/yr.svg
+  favicon: static/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - header.autohide
+    - navigation.top
+    - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle: 
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: 
+        icon: material/lightbulb
+        name: Switch to light mode
+
+
+nav:
+  - Home: index.md
+  - KDB-q:
+    - Basic: 
+      - Atom-lists:
+        - Basic Operations: kdb-q/basic/atom-lists/basic_operations.md
+        - Atoms: kdb-q/basic/atom-lists/atom.md
+        - Intro to Lists: kdb-q/basic/atom-lists/introduction_to_lists.md
+        - List Operations: kdb-q/basic/atom-lists/list_operations.md
+        - Hints and Tricks: kdb-q/basic/atom-lists/hints_and_tricks.md
+      - Dictionary:
+        - Dictionaries: kdb-q/basic/dict_table_func/1_dictionaries.md
+        - Operation on Dictionaries: kdb-q/basic/dict_table_func/2_operations_on_dictionaries.md
+      - Tables: kdb-q/basic/dict_table_func/3_tables.md
+      - Functions: kdb-q/basic/dict_table_func/4_functions.md
+      - Execution Control: kdb-q/basic/dict_table_func/5_execution_control.md
+      - Scripts: kdb-q/basic/dict_table_func/6_scripts.md
+      - Debugging: kdb-q/basic/dict_table_func/7_debugging.md
+      - Q-SQL:
+        - Select: kdb-q/basic/Qsql/1_using_select_statements.md
+        - Where: kdb-q/basic/Qsql/2_where_clause.md
+        - By: kdb-q/basic/Qsql/3_by_clause.md
+        - Functional Form: kdb-q/basic/Qsql/4_functional_form.md
+      - Keywords: kdb-q/basic/keywords_joins_adverbs_attributes/1_keywords.md
+      - Joins:
+        - Intro: kdb-q/basic/keywords_joins_adverbs_attributes/2_joins.md
+        - Asof-Windows: kdb-q/basic/keywords_joins_adverbs_attributes/3_asof_window_joins.md
+      - Adverbs: kdb-q/basic/keywords_joins_adverbs_attributes/4_adverbs.md
+      - Attributes: kdb-q/basic/keywords_joins_adverbs_attributes/5_attributes.md
+
+        

@@ -1,0 +1,13 @@
+/*
+1. mkdocs build
+2. echo "site" >> .gitignore
+3. 
+yogesh1314-mkdocs/
+    mkdocs.yml
+    docs/
+yogesh1314.github.io/
+
+cd ../yogesh1314.github.io/
+mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master
+
+*/
