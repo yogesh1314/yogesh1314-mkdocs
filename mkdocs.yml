@@ -4,8 +4,8 @@ site_description: 'Personal Blog to document my experiments with tech'
 
 use_directory_urls: true
 
-repo_url: https://github.com/yogesh1314/yogesh1314.github.io
-repo_name: yogesh1314
+repo_url: https://github.com/yogesh1314/yogesh1314-mkdocs
+repo_name: yogesh1314-mkdocs
 
 extra_css:
   - stylesheets/extra.css
