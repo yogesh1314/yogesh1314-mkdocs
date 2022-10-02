@@ -75,5 +75,5 @@ nav:
       - Asof-Windows: kdb-q/keywords_joins_adverbs_attributes/3_asof_window_joins.md
     - Adverbs: kdb-q/keywords_joins_adverbs_attributes/4_adverbs.md
     - Attributes: kdb-q/keywords_joins_adverbs_attributes/5_attributes.md
-
+    - Index Amend: kdb-q/keywords_joins_adverbs_attributes/6_index_amend_apply.md
         
