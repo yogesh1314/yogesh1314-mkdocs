@@ -76,4 +76,7 @@ nav:
     - Adverbs: kdb-q/keywords_joins_adverbs_attributes/4_adverbs.md
     - Attributes: kdb-q/keywords_joins_adverbs_attributes/5_attributes.md
     - Index Amend: kdb-q/keywords_joins_adverbs_attributes/6_index_amend_apply.md
-        
+    - IPC:
+      - Connecting: kdb-q/ipc_web_access/ipc_connecting.md
+      - Send Receive: kdb-q/ipc_web_access/ipc-sending-receiving.md 
+      - Web Browser: kdb-q/ipc_web_access/kdb-via-web-browser.md 
