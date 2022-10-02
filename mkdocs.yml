@@ -54,7 +54,7 @@ nav:
       - Atom-lists:
         - Basic Operations: kdb-q/basic/atom-lists/basic_operations.md
         - Atoms: kdb-q/basic/atom-lists/atom.md
-        - Intro to Lists: kdb-q/basic/atom-lists/introduction_to_lists.md
+        - Lists: kdb-q/basic/atom-lists/introduction_to_lists.md
         - List Operations: kdb-q/basic/atom-lists/list_operations.md
         - Hints and Tricks: kdb-q/basic/atom-lists/hints_and_tricks.md
       - Dictionary:
