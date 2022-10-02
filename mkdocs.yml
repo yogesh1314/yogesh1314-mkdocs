@@ -50,31 +50,30 @@ theme:
 nav:
   - Home: index.md
   - KDB-q:
-    - Basic: 
-      - Atom-lists:
-        - Basic Operations: kdb-q/basic/atom-lists/basic_operations.md
-        - Atoms: kdb-q/basic/atom-lists/atom.md
-        - Lists: kdb-q/basic/atom-lists/introduction_to_lists.md
-        - List Operations: kdb-q/basic/atom-lists/list_operations.md
-        - Hints and Tricks: kdb-q/basic/atom-lists/hints_and_tricks.md
-      - Dictionary:
-        - Dictionaries: kdb-q/basic/dict_table_func/1_dictionaries.md
-        - Operation on Dictionaries: kdb-q/basic/dict_table_func/2_operations_on_dictionaries.md
-      - Tables: kdb-q/basic/dict_table_func/3_tables.md
-      - Functions: kdb-q/basic/dict_table_func/4_functions.md
-      - Execution Control: kdb-q/basic/dict_table_func/5_execution_control.md
-      - Scripts: kdb-q/basic/dict_table_func/6_scripts.md
-      - Debugging: kdb-q/basic/dict_table_func/7_debugging.md
-      - Q-SQL:
-        - Select: kdb-q/basic/Qsql/1_using_select_statements.md
-        - Where: kdb-q/basic/Qsql/2_where_clause.md
-        - By: kdb-q/basic/Qsql/3_by_clause.md
-        - Functional Form: kdb-q/basic/Qsql/4_functional_form.md
-      - Keywords: kdb-q/basic/keywords_joins_adverbs_attributes/1_keywords.md
-      - Joins:
-        - Intro: kdb-q/basic/keywords_joins_adverbs_attributes/2_joins.md
-        - Asof-Windows: kdb-q/basic/keywords_joins_adverbs_attributes/3_asof_window_joins.md
-      - Adverbs: kdb-q/basic/keywords_joins_adverbs_attributes/4_adverbs.md
-      - Attributes: kdb-q/basic/keywords_joins_adverbs_attributes/5_attributes.md
+    - Atom-lists:
+      - Basic Operations: kdb-q/atom-lists/basic_operations.md
+      - Atoms: kdb-q/atom-lists/atom.md
+      - Lists: kdb-q/atom-lists/introduction_to_lists.md
+      - List Operations: kdb-q/atom-lists/list_operations.md
+      - Hints and Tricks: kdb-q/atom-lists/hints_and_tricks.md
+    - Dictionary:
+      - Dictionaries: kdb-q/dict_table_func/1_dictionaries.md
+      - Operation on Dictionaries: kdb-q/dict_table_func/2_operations_on_dictionaries.md
+    - Tables: kdb-q/dict_table_func/3_tables.md
+    - Functions: kdb-q/dict_table_func/4_functions.md
+    - Execution Control: kdb-q/dict_table_func/5_execution_control.md
+    - Scripts: kdb-q/dict_table_func/6_scripts.md
+    - Debugging: kdb-q/dict_table_func/7_debugging.md
+    - Q-SQL:
+      - Select: kdb-q/Qsql/1_using_select_statements.md
+      - Where: kdb-q/Qsql/2_where_clause.md
+      - By: kdb-q/Qsql/3_by_clause.md
+      - Functional Form: kdb-q/Qsql/4_functional_form.md
+    - Keywords: kdb-q/keywords_joins_adverbs_attributes/1_keywords.md
+    - Joins:
+      - Intro: kdb-q/keywords_joins_adverbs_attributes/2_joins.md
+      - Asof-Windows: kdb-q/keywords_joins_adverbs_attributes/3_asof_window_joins.md
+    - Adverbs: kdb-q/keywords_joins_adverbs_attributes/4_adverbs.md
+    - Attributes: kdb-q/keywords_joins_adverbs_attributes/5_attributes.md
 
         
