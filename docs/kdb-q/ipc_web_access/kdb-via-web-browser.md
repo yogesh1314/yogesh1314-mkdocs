@@ -27,21 +27,21 @@ q)f
 * now if we open browser with address `http://localhost:[portnumber]/`
 * it will show variables list on 1 side and its value on other side
 
-![Browser](kdb-q/ipc_web_access/first.png "browser")
+![Browser](first.png "browser")
 
 * we can execute simple commands using `?` after url
   
-![Browser](kdb-q/ipc_web_access/second.png "browser")
+![Browser](second.png "browser")
 * tables queries can also be executed in similar manner
 `http://localhost:1234/?select from t where size=22`
 
-![Browser](kdb-q/ipc_web_access/third.png "browser")
+![Browser](third.png "browser")
 * functions are not displayed in browser by default but can be seen using `\function_name`
 
-![Browser](kdb-q/ipc_web_access/fourth.png "browser")
+![Browser](fourth.png "browser")
 * functions can also be executed although not visible
 
-![Browser](kdb-q/ipc_web_access/fifth.png "browser")
+![Browser](fifth.png "browser")
 * we can also save the data in a file - `.csv` `.txt` `.xml`
 * format `http://hostname:portnumber/filename.ext?variable_name_to_be_saved`
 * `http://localhost:1234/tab.csv?t` - will prompt to save table t in `.csv` format
