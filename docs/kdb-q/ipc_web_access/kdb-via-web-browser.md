@@ -31,20 +31,20 @@ q)f
 
 * we can execute simple commands using `?` after url
   
-![Browser](second.png "browser")
+![second](second.png "second")
 
 * tables queries can also be executed in similar manner
 `http://localhost:1234/?select from t where size=22`
 
-![Browser](third.png "browser")
+![third](third.png "third")
 
 * functions are not displayed in browser by default but can be seen using `\function_name`
 
-![Browser](fourth.png "browser")
+![fourth](fourth.png "fourth")
 
 * functions can also be executed although not visible
 
-![Browser](fifth.png "browser")
+![fifth](fifth.png "fifth")
 
 * we can also save the data in a file - `.csv` `.txt` `.xml`
 * format `http://hostname:portnumber/filename.ext?variable_name_to_be_saved`
