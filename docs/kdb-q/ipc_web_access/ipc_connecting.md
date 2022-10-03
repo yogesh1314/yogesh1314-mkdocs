@@ -24,8 +24,8 @@ q)\p
 ```
 
 * let's create 2 q processes:
-** server - one which is serving queries
-** client - one which is making queries
+  * server - one which is serving queries
+  * client - one which is making queries
 
 * we can open a connection from client to server using function `hopen`
 * we can also see which socket this handle is assigned to by checking value of `h`
@@ -101,22 +101,22 @@ q).z.W
 
 ### `.z.po`
 
-* this is executed whenever a handle is opened and `.z.pw` has executed successfully
+* this is executed whenever a handle is opened and after `.z.pw` has executed successfully
 * we can print details of just opened handle in this function, like: ip address, username, date time and handle number
 * argument passed to function `.z.po` is handle number
 * `.z.a` - show ip address
 * `.z.p` - current timestamp
 * `.z.u` - user opening handle
 
-```
-//server
+```q
+// server
 q).z.po:{[x] show(.z.a;.z.p;.z.u;x)}
 {[x] show(.z.a;.z.p;.z.u;x)}
 q)2130706433i
 2022.02.21D03:38:51.578467000
 `abc
 10i
-```q
+```
 
 
 ```q
@@ -128,14 +128,13 @@ q)h2:hopen `::1234:abc:pass
 
 * we can use `.z.pc` to be executed whenever a handle is closed to server
 
-```
+```q
 //server
 q).z.pc:{[x] show(.z.h;.z.p;x)}
 q)`ykr-mbam1.local
 2022.02.21D03:42:57.717442000
 10i
-```q
-
+```
 
 ```q
 //client
@@ -144,7 +143,7 @@ q)hclose h2
 
 ## Timeout
 
-* we can also define timeout when opening a handle
+* we can also define timeout in millisecods when opening a handle
 
 ```q
 // server
