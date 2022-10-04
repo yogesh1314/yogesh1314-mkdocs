@@ -83,3 +83,8 @@ nav:
     - File I/O:
       - On disk tables: kdb-q/fileio/on-disk-tables.md
       - Load save files: kdb-q/fileio/load-save-files.md
+    - Data Analysis:
+      - Rack Align Pivot: kdb-q/data-analysis/rack-align-pivot.md
+      - Compare Profile: kdb-q/data-analysis/compare-profile.md
+      - Trade Analysis: kdb-q/data-analysis/trade-analysis.md
+      - Map Reduce Parallelization: kdb-q/data-analysis/map-reduce-parallel.md
