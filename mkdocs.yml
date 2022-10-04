@@ -80,3 +80,6 @@ nav:
       - Connecting: kdb-q/ipc_web_access/ipc_connecting.md
       - Send Receive: kdb-q/ipc_web_access/ipc-sending-receiving.md 
       - Web Browser: kdb-q/ipc_web_access/kdb-via-web-browser.md 
+    - File I/O:
+      - On disk tables: kdb-q/fileio/on-disk-tables.md
+      - Load save files: kdb-q/fileio/load-save-files.md
