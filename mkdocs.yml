@@ -9,6 +9,11 @@ repo_name: yogesh1314-mkdocs
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/prism.css # DO NOT ALTER 
+
+extra_javascript:
+  - scripts/prism.js
+  - scripts/jquery-3.6.0.min.js # jQuery for scripts/qsearch.js
 
 extra:
   generator: false
