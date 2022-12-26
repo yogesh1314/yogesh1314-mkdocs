@@ -295,4 +295,82 @@ ORCL 32.26 268250.1 8317    1451326  45032        32.22324
 
 ## Pivoting 
 
-* can be used to move row values into column values
+* Used to move row values into column values
+* We have a table `tab` which has sym, time and price 
+```
+q)tab:([]sym:`TCS`SBI`TCS`SBI`SBI;time: 09:00 09:01 09:20 09:32 09:34; size: 200 300 5000 400 350; price: 39.99 45.3 34.56 22.34 99.89)
+q)tab
+sym time  size price
+--------------------
+TCS 09:00 200  39.99
+SBI 09:01 300  45.3
+TCS 09:20 5000 34.56
+SBI 09:32 400  22.34
+SBI 09:34 350  99.89
+```
+* Now we want to swap the row values to column values
+* Ex: we can use sym column as column headers
+1. we get the distinct sym from table, these will form as column headers
+```
+q)colnames: asc exec distinct sym from tab
+q)colnames
+`s#`SBI`TCS
+```
+2. we then extract dictionary for sym!price for each time value that we have 
+```
+q)exec sym!price by time from tab
+09:00| (,`TCS)!,39.99
+09:01| (,`SBI)!,45.3
+09:20| (,`TCS)!,34.56
+09:32| (,`SBI)!,22.34
+09:34| (,`SBI)!,99.89
+``` 
+3. then we can populate the dictionary using our `colnames` list
+```
+q)pivtab: exec colnames#sym!price by time from tab
+q)pivtab
+     | SBI   TCS
+-----| -----------
+09:00|       39.99
+09:01| 45.3
+09:20|       34.56
+09:32| 22.34
+09:34| 99.89
+```
+4. we need to name the time column 
+```
+q)pivtab: exec colnames#sym!price by time:time from tab
+q)pivtab
+time | SBI   TCS
+-----| -----------
+09:00|       39.99
+09:01| 45.3
+09:20|       34.56
+09:32| 22.34
+09:34| 99.89
+```
+5. finally, we can forward fill the gaps using `fills`
+```
+q)pivtab: fills exec colnames#sym!price by time:time from tab
+q)pivtab
+time | SBI   TCS
+-----| -----------
+09:00|       39.99
+09:01| 45.3  39.99
+09:20| 45.3  34.56
+09:32| 22.34 34.56
+09:34| 99.89 34.56
+q)pivtab: 0^fills exec colnames#sym!price by time:time from tab
+q)pivtab
+time | SBI   TCS
+-----| -----------
+09:00| 0     39.99
+09:01| 45.3  39.99
+09:20| 45.3  34.56
+09:32| 22.34 34.56
+09:34| 99.89 34.56
+```
+* simple formula can be: `pivot_table: 0^fills exec (exec asc distinct col1 from tab)#col1!col2 by col3:col3 from tab`
+* here `col1` is column header row
+* `col2` are values inside matrix
+* `col3` is row of matrix
