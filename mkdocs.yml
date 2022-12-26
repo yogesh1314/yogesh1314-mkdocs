@@ -13,7 +13,7 @@ extra_css:
 
 extra_javascript:
   - scripts/prism.js
-  - scripts/jquery-3.6.0.min.js # jQuery for scripts/qsearch.js
+  - scripts/jquery-3.6.3.min.js # jQuery for scripts/qsearch.js
 
 extra:
   generator: false
