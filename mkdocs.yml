@@ -98,3 +98,5 @@ nav:
       - Compare Profile: kdb-q/data-analysis/compare-profile.md
       - Trade Analysis: kdb-q/data-analysis/trade-analysis.md
       - Map Reduce Parallelization: kdb-q/data-analysis/map-reduce-parallel.md
+  - Advent-of-Code:
+    - Year 2023: aoc/23/index.md
