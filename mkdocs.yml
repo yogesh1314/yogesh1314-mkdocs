@@ -1,11 +1,8 @@
 site_name: 'Tech Blog'
 site_url: https://yogesh1314.github.io
-site_description: 'Personal Blog to document my experiments with tech'
+site_description: 'Personal Tech Wiki'
 
 use_directory_urls: true
-
-repo_url: https://github.com/yogesh1314/yogesh1314-mkdocs
-repo_name: yogesh1314-mkdocs
 
 extra_css:
   - stylesheets/extra.css
@@ -58,45 +55,45 @@ theme:
 
 
 nav:
-  - Home: index.md
-  - KDB-q:
+  - qkdb:
+    - Index: qkdb/index.md
     - Atom-lists:
-      - Basic Operations: kdb-q/atom-lists/basic_operations.md
-      - Atoms: kdb-q/atom-lists/atom.md
-      - Lists: kdb-q/atom-lists/introduction_to_lists.md
-      - List Operations: kdb-q/atom-lists/list_operations.md
-      - Hints and Tricks: kdb-q/atom-lists/hints_and_tricks.md
+      - Basic Operations: qkdb/atom-lists/basic_operations.md
+      - Atoms: qkdb/atom-lists/atom.md
+      - Lists: qkdb/atom-lists/introduction_to_lists.md
+      - List Operations: qkdb/atom-lists/list_operations.md
+      - Hints and Tricks: qkdb/atom-lists/hints_and_tricks.md
     - Dictionary:
-      - Dictionaries: kdb-q/dict_table_func/1_dictionaries.md
-      - Operation on Dictionaries: kdb-q/dict_table_func/2_operations_on_dictionaries.md
-    - Tables: kdb-q/dict_table_func/3_tables.md
-    - Functions: kdb-q/dict_table_func/4_functions.md
-    - Execution Control: kdb-q/dict_table_func/5_execution_control.md
-    - Scripts: kdb-q/dict_table_func/6_scripts.md
-    - Debugging: kdb-q/dict_table_func/7_debugging.md
+      - Dictionaries: qkdb/dict_table_func/1_dictionaries.md
+      - Operation on Dictionaries: qkdb/dict_table_func/2_operations_on_dictionaries.md
+    - Tables: qkdb/dict_table_func/3_tables.md
+    - Functions: qkdb/dict_table_func/4_functions.md
+    - Execution Control: qkdb/dict_table_func/5_execution_control.md
+    - Scripts: qkdb/dict_table_func/6_scripts.md
+    - Debugging: qkdb/dict_table_func/7_debugging.md
     - Q-SQL:
-      - Select: kdb-q/Qsql/1_using_select_statements.md
-      - Where: kdb-q/Qsql/2_where_clause.md
-      - By: kdb-q/Qsql/3_by_clause.md
-      - Functional Form: kdb-q/Qsql/4_functional_form.md
-    - Keywords: kdb-q/keywords_joins_adverbs_attributes/1_keywords.md
+      - Select: qkdb/qsql/1_using_select_statements.md
+      - Where: qkdb/qsql/2_where_clause.md
+      - By: qkdb/qsql/3_by_clause.md
+      - Functional Form: qkdb/qsql/4_functional_form.md
+    - Keywords: qkdb/keywords-joins-adverbs-attributes/1_keywords.md
     - Joins:
-      - Intro: kdb-q/keywords_joins_adverbs_attributes/2_joins.md
-      - Asof-Windows: kdb-q/keywords_joins_adverbs_attributes/3_asof_window_joins.md
-    - Adverbs: kdb-q/keywords_joins_adverbs_attributes/4_adverbs.md
-    - Attributes: kdb-q/keywords_joins_adverbs_attributes/5_attributes.md
-    - Index Amend: kdb-q/keywords_joins_adverbs_attributes/6_index_amend_apply.md
+      - Intro: qkdb/keywords-joins-adverbs-attributes/2_joins.md
+      - Asof-Windows: qkdb/keywords-joins-adverbs-attributes/3_asof_window_joins.md
+    - Adverbs: qkdb/keywords-joins-adverbs-attributes/4_adverbs.md
+    - Attributes: qkdb/keywords-joins-adverbs-attributes/5_attributes.md
+    - Index Amend: qkdb/keywords-joins-adverbs-attributes/6_index_amend_apply.md
     - IPC:
-      - Connecting: kdb-q/ipc_web_access/ipc_connecting.md
-      - Send Receive: kdb-q/ipc_web_access/ipc-sending-receiving.md 
-      - Web Browser: kdb-q/ipc_web_access/kdb-via-web-browser.md 
+      - Connecting: qkdb/ipc-web-access/ipc_connecting.md
+      - Send Receive: qkdb/ipc-web-access/ipc-sending-receiving.md 
+      - Web Browser: qkdb/ipc-web-access/kdb-via-web-browser.md 
     - File I/O:
-      - On disk tables: kdb-q/fileio/on-disk-tables.md
-      - Load save files: kdb-q/fileio/load-save-files.md
+      - On disk tables: qkdb/fileio/on-disk-tables.md
+      - Load save files: qkdb/fileio/load-save-files.md
     - Data Analysis:
-      - Rack Align Pivot: kdb-q/data-analysis/rack-align-pivot.md
-      - Compare Profile: kdb-q/data-analysis/compare-profile.md
-      - Trade Analysis: kdb-q/data-analysis/trade-analysis.md
-      - Map Reduce Parallelization: kdb-q/data-analysis/map-reduce-parallel.md
+      - Rack Align Pivot: qkdb/data-analysis/rack-align-pivot.md
+      - Compare Profile: qkdb/data-analysis/compare-profile.md
+      - Trade Analysis: qkdb/data-analysis/trade-analysis.md
+      - Map Reduce Parallelization: qkdb/data-analysis/map-reduce-parallel.md
   - Advent-of-Code:
-    - Year 2023: aoc/23/index.md
+    - Y2023: aoc/23/index.md
