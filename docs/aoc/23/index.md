@@ -7,9 +7,9 @@
 * [Day 2](2.md)
 * [Day 3](3.md)
 * [Day 4](4.md)
-<!-- 
 * [Day 5](5.md)
 * [Day 6](6.md)
+<!-- 
 * [Day 7](7.md)
 * [Day 8](8.md) 
 * [Day 9](9.md)
