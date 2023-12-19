@@ -53,4 +53,3 @@ Now once you are done, let's setup an Automation to go back to Normal mode or Tu
 11. Done
 
 That's it !! Enjoy :) 
-![error](static/error.gif)
