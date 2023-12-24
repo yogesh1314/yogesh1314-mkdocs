@@ -11,7 +11,7 @@
 * [Day 6**](6.md)
 * [Day 7](7.md)
 * [Day 8](8.md) 
-* [Day 9](9.md)
+* [Day 9**](9.md)
 * [Day 10](10.md)
 * [Day 11](11.md)
 * [Day 12](12.md) 
